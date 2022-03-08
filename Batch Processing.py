@@ -40,6 +40,8 @@ cwd = os.getcwd()
 directory = os.getcwd()
 
 # Creating a generator object that contains all of the excel files in the directory
+# Asterisks is a wild card, so is saying take any file name that has .blahblah
+# Could do sub wildcards i.e baseball.xlsx
 files = Path(directory).glob('*.xlsx')
 
 # Creating an empty list to append the results for each file, each part of list
